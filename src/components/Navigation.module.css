@@ -1,0 +1,16 @@
+.nav_wrap > a {
+	font-size: 22px;
+	padding: 3px 10px;
+	font-weight: 400;
+}
+.nav_wrap > a:hover {
+	font-weight: 600;
+}
+.title {
+	color: #f4c518;
+	margin-left: 40px;
+	display: inline-block;
+	padding-right: 20px;
+	border-radius: 10px;
+	font-weight: 900;
+}

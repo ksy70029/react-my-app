@@ -25,7 +25,6 @@ function Home() {
 				<h1 className={styles.loading}>Loading...</h1>
 			) : (
 				<div>
-					<h1 className={styles.category}>Popular Movies</h1>
 					<div className={styles.contents_wrap}>
 						{movies.map((movie) => (
 							<Movie
