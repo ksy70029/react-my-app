@@ -1,22 +1,27 @@
 import { useEffect, useState } from "react";
 import propTypes from "prop-types";
 import { useParams } from "react-router-dom";
+import styles from "./Detail.module.css";
 
 function Contents({ CoverImg, title, year, rating, genres, description }) {
 	return (
-		<div>
-			<img src={CoverImg} alt={title} />
-			<ul>
+		<div className={styles.content_wrap}>
+			<img className={styles.img} src={CoverImg} alt={title} />
+			<div className={styles.text}>
 				<h2>{title}</h2>
-				<li>{year}</li>
-				<li>{rating}</li>
-				<li>
-					{genres.map((g) => (
-						<span key={g}>{g}</span>
-					))}
-				</li>
-				<li>{description}</li>
-			</ul>
+				<ul className={styles.list}>
+					<li>{year}</li>
+					<li>⭐️ {rating}</li>
+					<li>
+						{genres.map((g) => (
+							<span className={styles.genres} key={g}>
+								{g}
+							</span>
+						))}
+					</li>
+				</ul>
+				<p className={styles.description}>{description}</p>
+			</div>
 		</div>
 	);
 }
