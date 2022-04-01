@@ -1,0 +1,28 @@
+.content_wrap {
+	width: 280px;
+	background-color: #1a1a1a;
+	margin: 20px;
+}
+.description {
+	padding: 10px 20px;
+}
+.cover_img {
+	width: 100%;
+}
+.title {
+	margin: 5px 0;
+}
+.title:hover > a {
+	color: #f4c518;
+}
+.year {
+	font-weight: 300;
+	margin: 10px 0;
+}
+.genres {
+	padding: 0 12px;
+	font-size: 15px;
+	color: #eee;
+}
+.rating {
+}

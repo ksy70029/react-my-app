@@ -1,0 +1,14 @@
+.loading {
+	font-size: 30px;
+}
+.category {
+	color: #f4c518;
+	font-weight: bold;
+	margin-left: 40px;
+}
+.contents_wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
